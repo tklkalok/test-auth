@@ -1,23 +1,47 @@
 {
-  "homepage": "http://tkl.kalok.github.io/test-auth",
-  "name": "baccaratcalculator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "spa",
+  "version": "0.1.0",
+  "homepage": "https://gitname.github.io/test-auth",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.101",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ts-node": "ts-node",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@types/node": "^20.14.9",
-    "ts-node": "^10.9.2",
-    "tslib": "^2.6.3",
-    "typescript": "^5.5.3",
-    "yarn": "^1.22.22"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
